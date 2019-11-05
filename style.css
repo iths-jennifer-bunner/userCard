@@ -1,0 +1,74 @@
+body{
+    margin: auto;  /* sätt en bredd, sen margin auto så hamnar den i mitten */
+    width: 500px;
+}
+.top{
+    background-color: rgb(41, 119, 119);
+    height: 470px;  /* gjorde den kortare annars stack den ut nedanför*/
+    width: 300px;
+    display: flex;       /* behövde sätta flex på för bilden*/
+    flex-direction: column;  /* satte column för att den skulle hamna i mitten*/
+    border-radius: 10px;
+    -webkit-box-shadow: 10px 21px 25px -11px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 21px 25px -11px rgba(0,0,0,0.75);
+    box-shadow: 10px 21px 25px -11px rgba(0,0,0,0.75);
+}
+.bottom{
+    background-color: rgb(209, 248, 244);
+    height: 250px;
+    width: 300px;
+    border-radius: 0px 0px 10px 10px; /* ville bara ha dem nedre hörnen böjda */ 
+    padding-top:50px; 
+}
+img{
+    border: solid 15px rgb(209, 248, 244);/*vill ha den solid, sen storlek, sen färg  */
+    border-radius: 50%;
+    height: 150px;   /*om man vill ha en rund bild så behöver bilden vara fyrkantig, annars blir den oval */
+    width: 150px;
+    align-self: center;
+    transform: translateY(40%) /*flyttar bilden till mitten, translate kommer från matten, X & Y axeln, %en är hur den flyttas(100% flyttar hela vägen) */
+
+}
+.card{
+    display: flex;
+}
+.left{
+    align-self: center;
+    margin: 10px;
+}
+.right{
+    align-self: center;
+    margin: 10px;
+}
+.name{
+    color: white;
+    font-weight: bold;
+}
+h2{
+    font-family: sans-serif;
+    padding: 10px;
+    font-family: sans-serif;
+}
+h3{
+    color: gray;
+    font-weight: bold;
+    font-family: sans-serif;
+    padding: 10px 10px;
+    margin: 0px;
+}
+p{
+    padding: 10px;
+    margin: 0px;
+    font-weight: bold;
+}
+button{
+    background-color: rgb(223, 183, 204);
+    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(189, 134, 189);
+}
